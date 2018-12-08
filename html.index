@@ -1,41 +1,83 @@
+<body>
+
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
 
+<div id="top-title">  
 <h1 id="title">Favorite Coffee Drinks</h1>
-
+</div>
+  
 <p id="description">This is a form to survey everyone's coffee drink preferences so that we can make fast and efficient coffee runs. Let us know what you like!</p>
+
+<div id="box">
+    
 
 <form id="survey-form"> 
 
-<div class="module">  
-  <label for="name" id="name-label"> Name: 
+<div id="box-1">
+
+  <div class="module">
+  <label for="name" id="name-label"> Name: </label>
     <input type="text" id="name" placeholder="Put your name here" required>
-  </label>
-</div>
+  </div>  
 <br>
 
 <div class="module">  
-  <label for="email" id="email-label"> Email:   
+  <label for="email" id="email-label"> Email: </label>  
     <input type="email" id="email" placeholder="Your email goes here" required>  
-  </label>  
 </div>
 <br>
+  
+</div>
 
+<div id="box-2">  
 <div class="module">  
-  <label for="drink-category" name="drink-label"> Drink Category: 
+  <label for="drink-category" name="drink-label"> Drink Category: </label>
     <input type="radio" id="drink-category" name="drink-category" value="Americano">Americano
     <input type="radio" id="drink-category" name="drink-category" value="Cappuchino">Cappuchino
     <input type="radio" id="drink-category" name="drink-category" value="Pour-Over">Pour-Over
-  </label>
 </div>
 <br>
 
 <div class="module">   
-  <label for="number" id="number-label"> How many sugars do you want? 
+  <label for="number" id="number-label"> How many sugars do you want? </label> 
     <input type="number" id="number" min="0" max="5" placeholder="A number between 1 and 5" >  
-  </label>
 </div>
 <br>
   
-<button id="submit"> Submit </button>  
+<div class="module">
+  <label for="dropdown" name="dropdown-label"> Choose a Delivery Location </label> 
+    <select id="dropdown" name="dropdown">
+      <option value="">Please choose</option>
+      <option value="desk">My desk</option>
+      <option value="breakroom">The Break Room</option>
+      <option value="frontdesk">The Front Desk</option>
+    </select>      
+</div>
+<br>  
+</div>  
+
+<div class="module">  
+   <label for="checklist"> I have my credit card on file <input type="checkbox" id="checklist" value="unchecked"> </label>
+   <br>
+   <label for="checklist"> I haven't left a mess in the Break Room <input type="checkbox" id="checklist" value="unchecked"> </label>
+   <br>
+   <label for="checklist"> I'm an awesome person <input type="checkbox" id="checklist" value="unchecked"> </label>
+</div>  
+<br>
+
+<div class="module">  
+  <textarea>"Comments or stuff?"</textarea>  
+<br>  
+</div>  
+  
+<div class="module">
+  <button id="submit"> Submit </button>  
+</div>  
+  
   
 </form>
+
+</div>
+  
+</body>  
